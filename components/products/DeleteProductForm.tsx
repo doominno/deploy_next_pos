@@ -1,8 +1,5 @@
 import { Product } from "@/src/shemas"
 import { revalidatePath } from "next/cache"
-
-
-
 export default function DeleteProductForm({productId} : {productId: Product['id']}) {
 
     const handleDeleteProduct = async () => {

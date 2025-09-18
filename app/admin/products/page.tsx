@@ -7,7 +7,7 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 async function getProducts(take : number, skip : number) {
-    const url = `${process.env.API_URL}/products?take=${take}&skip=${skip}`
+    const url = `${process.env.NEXT_PUBLIC_API_URL}/products?take=${take}&skip=${skip}`
     const req = await fetch(url)
     const json = await req.json()
     const data = ProductsResponseSchema.parse(json)

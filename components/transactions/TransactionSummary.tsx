@@ -43,7 +43,7 @@ export default function TransactionSummary({transaction} : {transaction: Transac
   
                 <div className="flex justify-between">
                   <dt>Descuento</dt>
-                  <dd className="text-gray-900">- {formatCurrency(+transaction.discount)}</dd>
+                  <dd className="text-gray-900">- {formatCurrency(+(transaction.discount || 0))}</dd>
                 </div>
                   </>
                 )}

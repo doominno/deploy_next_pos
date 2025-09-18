@@ -4,12 +4,16 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       {
+        protocol: 'http',
+        hostname: 'deply-pos-nestjs.onrender.com'
+      },
+      {
         protocol: 'https',
         hostname: 'deply-pos-nestjs.onrender.com'
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        hostname: 'res.cloudinary.com'
       }
     ]
   }

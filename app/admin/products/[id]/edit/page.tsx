@@ -6,7 +6,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 
 async function getProduct(id: string) {
-    const url = `${process.env.API_URL}/products/${id}`
+    const url = `${process.env.NEXT_PUBLIC_API_URL}/products/${id}`
     const req = await fetch(url)
     const json = await req.json()
     if(!req.ok) {

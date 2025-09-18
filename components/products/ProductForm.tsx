@@ -2,7 +2,7 @@ import { CategoriesResponseSchema, Product } from "@/src/shemas"
 import UploadProductImage from "./UploadProductImage"
 
 async function getCategories(){
-    const url = `${process.env.API_URL}/categories`
+    const url = `${process.env.NEXT_PUBLIC_API_URL}/categories`
     const req = await fetch(url)
     const json = await req.json()
     const categories = CategoriesResponseSchema.parse(json)

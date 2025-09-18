@@ -75,7 +75,7 @@ export const SuccessResponseSchema = z.object({
     id: z.number(),
     total: z.string(),
     transactionDate: z.string(),
-    discount: z.string(),
+    discount: z.string().nullable(),
     coupon: z.string().nullable(),
     contents: z.array(ContentsSchema)
   })

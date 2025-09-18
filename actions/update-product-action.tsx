@@ -24,7 +24,7 @@ export async function updateProduct(productId: Product['id'], prevState: ActionS
         }
     }
 
-    const url = `${process.env.API_URL}/products/${productId}`
+    const url = `${process.env.NEXT_PUBLIC_API_URL}/products/${productId}`
     const req = await fetch (url, {
         method: 'PUT',
         headers: {

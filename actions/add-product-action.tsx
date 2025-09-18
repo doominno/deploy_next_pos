@@ -24,7 +24,7 @@ export async function addProduct(prevState: ActionStateType, formData: FormData)
         }
     }
 
-    const url = `${process.env.API_URL}/products`
+    const url = `${process.env.NEXT_PUBLIC_API_URL}/products`
     const req = await fetch (url, {
         method: 'POST',
         headers: {
